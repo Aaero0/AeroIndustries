@@ -1,0 +1,15 @@
+{
+  "generic": {
+    "type": "generic_accessory_aero",
+    "width": 1.5,
+    "height": 0.25
+  },
+  "rendering":{
+    "modelType":"none"
+  },
+  "general": {
+	"name": "Truck roof aero",
+    "description": "Truck accessory - looks vary depending on the truck applied to",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}

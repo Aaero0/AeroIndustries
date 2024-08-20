@@ -1,0 +1,335 @@
+{
+  "motorized": {
+    "hasRunningLights": false,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "isBigTruck": false
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.1203125,-0.3453125],
+      "minValue": 0.0,
+      "maxValue": 0.5,
+      "toneIndex": 1,
+	  "defaultPart": "aeroindustriesparts:wheel_compy",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.0,0.1203125,0.5140625],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 0.875,
+      "maxValue": 0.5,
+      "toneIndex": 1,
+	  "defaultPart": "aeroindustriesparts:wheel_compy",
+      "types": [
+        "ground_wheel"
+      ],
+"animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,0.443175,0.37421875],
+            "axis": [0.0,-1.0,10.0]
+          }
+        ]
+    },
+    {
+      "pos": [0.622101,0.462255,2.1853],
+	  "isPermanent": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "isController": true,
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.0,0.25,0.109375],
+      "maxValue": 4.25,
+	  "defaultPart": "unuparts:unuparts_part_unu_engine_i1m",
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": [1,2,3,4,10]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.390625,-0.375],
+          "width": 0.25,
+          "height": 0.25
+        },
+        {
+          "pos": [0.0,0.390625,-0.109375],
+          "width": 0.25,
+          "height": 0.25
+        },
+        {
+          "pos": [0.0,0.390625,0.15625],
+          "width": 0.25,
+          "height": 0.25
+        },
+        {
+          "pos": [0.0,0.390625,0.421875],
+          "width": 0.25,
+          "height": 0.25
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRUNK",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_trunk",
+          "pos": [0.0,-0.045725,0.084375],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.0,0.3125,0.0],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.0,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.0,0.3125,0.0],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.0,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.3125,0.0],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.0,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.3125,0.0],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.0,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.0,0.3125,0.0],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.0,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_red",
+      "name": "Hanada Compy (Red)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_yellow",
+      "name": "Hanada Compy (Yellow)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeGray:1,oredict:dyeLightBlue:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_white",
+      "name": "Hanada Compy (White)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeBlack:1"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,0.443175,0.37421875],
+            "axis": [0.0,-1.0,10.0]
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,0.443175,0.37421875],
+            "axis": [0.0,-1.0,10.0]
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,0.443175,0.37421875],
+            "axis": [0.0,-1.0,10.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 0.2,
+        "hitboxSize": 0.2,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [0.0,0.3125,-0.35625],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj",
+    "initialVariables": [
+      "door_tailgate"
+    ]
+  },
+  "general": {
+    "description": "A small scooter that was able to fit inside the trunk of the Hanada Resident and Nowaday",
+    "health": 50,
+    "materialLists": [
+      [
+        "oredict:ingotIron:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

@@ -1,0 +1,50 @@
+﻿{
+    "generic": {
+      "type": "generic_furniture_double",
+      "forwardsDamageMultiplier": 1.0,
+      "forceAllLinks": true,
+      "width": 1.0,
+      "height": 0.5
+    },	
+	"connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": false,
+	  "isHitch" : true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel_gooseneck",
+          "pos": [0.0,0.5625,0.0],
+          "distance": 2.0
+        }
+      ]
+    }
+    ],
+   "collisionGroups":[
+      {
+         "collisions":[
+			{
+              "pos":[
+                  0.0,
+                  0.53125,
+                  0.0
+               ],
+               "width": 0.25,
+               "height": 0.25,
+               "variableName": "connection_requested",
+               "variableType": "set",
+               "variableValue": 1.0
+            }
+         ]
+      }
+   ],
+  "general": {
+    "name": "Aero Industries DutyHaul fifth wheel",
+    "description": "UNU Compatible",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ]
+  }
+}

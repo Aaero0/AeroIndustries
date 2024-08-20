@@ -1,0 +1,13 @@
+{
+  "generic": {
+    "type": "generic_rim_aluminum",
+    "width": 0.001,
+    "height": 0.001,
+    "hideOnCreativeTab": true
+  },
+  "general": {
+	"name": "s",
+    "description": "s",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}

@@ -1,0 +1,30 @@
+{
+   "general":{
+      "name":"Exit Sign (pole mounted, distance)",
+      "type":"sign",
+      "modelName":"sign_pole",
+      "materials":[
+         "oredict:ingotIron:1"
+      ]
+   },
+   "rendering":{
+      "textObjects":[
+         {
+            "fieldName":"Destination",
+            "pos":[
+               0.0,
+               0.84375,
+               0.016
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.6875,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         }
+      ]
+   }
+}

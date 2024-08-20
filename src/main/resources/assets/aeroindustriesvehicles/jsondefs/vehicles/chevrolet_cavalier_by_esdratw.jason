@@ -1,0 +1,563 @@
+{
+  "motorized": {
+	"isBigTruck": false,
+	"isTrailer": false,
+    "isFrontWheelDrive": false,
+    "isRearWheelDrive": true,
+    "hasCruiseControl": true,
+	"hasRunningLights": true,
+	"hasHeadlights": true,
+	"hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "instruments": [
+      {
+        "pos": [0.90745,100.829139,1.805],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.015625,
+        "hudX": 120,
+        "hudY": 45,
+        "hudScale": 0.325
+      },
+      {
+        "pos": [0.7512,100.829139,1.805],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.015625,
+        "hudX": 160,
+        "hudY": 45,
+        "hudScale": 0.325
+      },
+      {
+        "pos": [0.59495,100.829139,1.805],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.015625,
+        "hudX": 200,
+        "hudY": 45,
+        "hudScale": 0.325
+      },
+      {
+        "pos": [0.4387,100.829139,1.805],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.015625,
+        "hudX": 240,
+        "hudY": 45,
+        "hudScale": 0.325
+      },
+      {
+        "pos": [0.28245,100.829139,1.805],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.015625,
+        "hudX": 280,
+        "hudY": 45,
+        "hudScale": 0.325
+      }
+    ]
+  },
+  "parts": [
+    {
+      "pos": [-0.878812,0.205797,-0.048144],
+      "minValue": 0.4,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [0.878812,0.205797,-0.048144],
+      "minValue": 0.4,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-0.878812,0.205797,3.40888],
+      "turnsWithSteer": true,
+      "minValue": 0.4,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.878812,0.205797,3.40888],
+      "turnsWithSteer": true,
+      "minValue": 0.4,
+      "maxValue": 1.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+	  "pos": [-0.584523,0.377097,-0.272991],
+      "types": ["seat_invisible"]
+    },
+    {
+      "pos": [0.0,0.377097,-0.272991],
+      "types": ["seat_invisible"]
+    },
+    {
+      "pos": [0.584523,0.377097,-0.272991],
+      "types": ["seat_invisible"]
+    },
+    {
+      "pos": [-0.584523,0.377097,0.727746],
+      "types": ["seat_invisible"]
+    },
+    {
+      "pos": [0.584523,0.377097,0.727746],
+      "isController": true,
+      "types": ["seat_invisible"]
+    },
+	{
+      "pos": [0.0,0.21217,2.83917],
+      "maxValue": 3.25,
+      "types": ["engine_car"],
+      "particleObjects": [
+        {
+          "type": "smoke",
+          "color": "#D9D9D9",
+          "toColor": "#D9D9D9",
+          "transparency": 0.25,
+          "toTransparency": 0.25,
+          "scale": 1.0,
+          "pos": [1.1262,0.09754,-0.74476],
+          "velocityVector": [1.0,0.0,0.0],
+          "quantity": 1
+        }
+      ]
+    },
+	{
+      "pos": [0.0,1.46807 ,1.73056],
+      "types": ["generic_lightbar","generic_roofdevice","generic_gyrophare"]
+    },
+	{
+      "pos": [0.0,1.46807 ,1.35475],
+      "types": ["generic_lightbar","generic_roofdevice","generic_gyrophare"]
+	},
+	{
+      "pos": [0.0,0.196271,3.19731],
+      "types": ["generic_licenseplate_us","generic_licenseplate_euro"]
+    },
+	{
+      "pos": [0.0,0.599763,-2.30247],
+      "rot": [0.0,0.180,0.0],
+      "types": ["generic_licenseplate_us","generic_licenseplate_euro"]
+	}
+  ],
+  "collision": [
+    {
+      "pos": [0.0,0.4,-0.25],
+      "width": 1.05,
+      "height": 0.4
+    }
+  ],
+  "doors": [
+    {
+      "name": "door_tailgate",
+      "closedPos": [0.72,0.6,-0.7],
+      "openPos": [0.72,0.0,-1.2],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_tailgate",
+      "closedPos": [0.0,0.6,-0.7],
+      "openPos": [0.0,0.0,-1.2],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_tailgate",
+      "closedPos": [-0.72,0.6,-0.7],
+      "openPos": [-0.72,0.0,-1.2],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_l",
+      "closedPos": [1.0,0.5,1.0],
+      "openPos": [1.8,0.5,1.4516],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_l",
+      "closedPos": [1.0,0.5,1.4],
+      "openPos": [1.4,0.5,1.6457],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_l",
+      "closedPos": [1.0,0.5,1.8],
+      "openPos": [1.0,0.5,1.8],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_r",
+      "closedPos": [-1.0,0.5,1.0],
+      "openPos": [-1.8,0.5,1.4516],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_r",
+      "closedPos": [-1.0,0.5,1.4],
+      "openPos": [-1.4,0.5,1.6457],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_r",
+      "closedPos": [-1.0,0.5,1.8],
+      "openPos": [-1.0,0.5,1.8],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_hood",
+      "closedPos": [0.5,0.75,3.0],
+      "openPos": [0.5,1.7,2.6],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_hood",
+      "closedPos": [0.5,0.75,2.4],
+      "openPos": [0.5,1.25,2.0],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_hood",
+      "closedPos": [-0.5,0.75,3.0],
+      "openPos": [-0.5,1.7,2.6],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "name": "door_hood",
+      "closedPos": [-0.5,0.75,2.4],
+      "openPos": [-0.5,1.25,2.0],
+      "width": 0.0,
+      "height": 0.0
+    }
+  ],
+	"connections": [
+    {
+      "hookup": true,
+      "type": "tow_bumper",
+      "pos": [0.0,0.02601,3.56009]
+    },
+    {
+      "hookup": true,
+      "type": "tow_wheel",
+      "pos": [0.0,-0.5,2.764965]
+    },
+	{
+      "type": "trailer_standard",
+      "pos": [0.0, 0.171606, -1.91748],
+      "distance": 2
+	}
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "White Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_black",
+      "name": "Black Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_red",
+      "name": "Red Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_beige",
+      "name": "Beige Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_blue",
+      "name": "Blue Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_green",
+      "name": "Green Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    },
+    {
+      "subName": "_yellow",
+      "name": "Yellow Chevrolet Cavalier Coupe",
+      "extraMaterials": ["oredict:dyeLightBlue:3"]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "steeringwhegfsgsgl",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [1.0,21.0,-12.0]
+          }
+        ]
+      }
+    ],
+	"lightObjects": [
+      {
+        "objectName": "$reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$headlights",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$runninglightsfront",
+        "emissive": true,
+        "color": "EA840A",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$runninglightsfront",
+        "emissive": true,
+        "color": "EA840A",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearright",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearleft",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearleft",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$brakelightbackwindow",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearright",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$signalfrontleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearright",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "$primarylightrearleft",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "$signalfrontright",
+        "emissive": true,
+        "color": "EA840A",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true
+      }
+    ]
+  },
+  "prefixFolders": "",
+  "packID": "blockautociv",
+  "systemName": "chevrolet_cavalier_by_esdratw",
+  "classification": "vehicle",
+  "general": {
+    "description": "(Model made by esdraTW) A Generic american sedan sold from 1995 to 2005",
+    "materials": ["oredict:ingotIron:18"]
+  }
+}

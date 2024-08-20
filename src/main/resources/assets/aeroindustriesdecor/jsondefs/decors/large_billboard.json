@@ -1,0 +1,38 @@
+{
+   "general":{
+      "width":3.0,
+      "height":17.0,
+      "depth":3.0,
+      "materials":[
+         "oredict:woolWhite:10",
+         "oredict:ingotIron:32",
+         "oredict:slimeball:5"
+      ]
+   },
+   "definitions":[
+      {
+         "subName":"_billsboards",
+         "name":"Large Billboard (Bills Boards)",
+         "partTones":[
+            ""
+         ],
+         "extraMaterialLists":[
+            [
+               "oredict:dyeWhite:1"
+            ]
+         ]
+      },
+      {
+         "subName":"_hfaf",
+         "name":"Large Billboard (HFAF, made by 3dblascht)",
+         "partTones":[
+            ""
+         ],
+         "extraMaterialLists":[
+            [
+               "oredict:dyeWhite:1"
+            ]
+         ]
+      }
+   ]
+}

@@ -1,0 +1,9 @@
+{
+    "general": {
+        "name" : "Sign (Pay Toll Ahead)",
+		"width" : 3.0,
+		"height" : 3.0,
+		"depth" : 0.16,
+		"materials" : ["oredict:dyeRed:2", "oredict:ingotIron:3", "oredict:slimeball:1"]
+	}
+}

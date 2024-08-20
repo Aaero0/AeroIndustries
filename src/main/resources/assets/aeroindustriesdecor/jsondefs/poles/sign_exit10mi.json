@@ -1,0 +1,10 @@
+{
+   "general":{
+      "name":"Next Exit in 10 Miles sign",
+      "type":"sign",
+      "modelName":"sign_pole",
+      "materials":[
+         "oredict:ingotIron:1"
+      ]
+   }
+}

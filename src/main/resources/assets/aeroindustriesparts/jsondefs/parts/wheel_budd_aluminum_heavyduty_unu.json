@@ -1,0 +1,62 @@
+{
+  "general": {
+      "name" : "Aluminum heavy duty truck budd wheel (front only, UNU)",
+      "type" : "ground_wheel_budd",
+  "materials" : ["oredict:dyeBlack:3", "oredict:ingotIron:3", "minecraft:wool:15:3"]
+  },
+  "parts":[
+    {
+       "pos":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "types":[
+          "generic_hubcap_heavyduty"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "types":[
+          "generic_nutcovers_heavyduty"
+       ]
+    },
+    {
+      "pos":[
+         0.09375,
+         0.0,
+         0.0
+      ],
+      "types":[
+         "generic_rim_heavyduty"
+      ],
+      "defaultPart": "aeroindustriesparts:hdrim",
+      "isPermanent": true
+   }
+ ],
+"ground" : {
+  "isWheel": true,
+  "flatHeight": 1.125,
+  "height" : 1.125,
+  "width" : 0.3125,
+  "motiveFriction" : 0.5,
+  "lateralFriction" : 0.5
+},
+"rendering" : {
+  "animatedObjects" : [
+    {
+      "objectName": "$tire",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "ground_isflat"
+        }
+      ]
+    }
+  ]
+}
+}

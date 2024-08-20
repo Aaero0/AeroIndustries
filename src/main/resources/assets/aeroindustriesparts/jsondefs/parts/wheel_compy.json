@@ -1,0 +1,28 @@
+{
+    "general": {
+        "name" : "Hanada Compy scooter wheel",
+        "type" : "ground_wheel",
+		"materials" : ["oredict:dyeBlack:3", "oredict:ingotIron:3"]
+    },
+	"ground" : {
+    "isWheel": true,
+    "flatHeight": 0.4171875,
+    "height" : 0.3125,
+		"width" : 0.08125,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 1.0
+	},
+	"rendering" : {
+		"animatedObjects" : [
+      {
+        "objectName": "$tire",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "ground_isflat"
+          }
+        ]
+      }
+    ]
+	}
+}

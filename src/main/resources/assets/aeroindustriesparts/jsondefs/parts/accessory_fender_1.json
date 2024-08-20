@@ -1,0 +1,12 @@
+{
+  "generic": {
+    "type": "generic_accessory_fender",
+    "width": 1.0,
+    "height": 0.25
+  },
+  "general": {
+	"name": "Truck Fender (variant 1)",
+    "description": "Truck accessory",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "general": {
+      "name" : "Steel truck budd wheel",
+      "type" : "ground_wheel_budd",
+  "materials" : ["oredict:dyeBlack:3", "oredict:ingotIron:3", "minecraft:wool:15:3"]
+  },
+  "parts":[
+    {
+       "pos":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "types":[
+          "generic_hubcap_steel"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "types":[
+          "generic_nutcovers_steel"
+       ]
+    },
+    {
+      "pos":[
+         0.0,
+         0.0,
+         0.0
+      ],
+      "types":[
+         "generic_rim_steel"
+      ],
+      "defaultPart": "aeroindustriesparts:steelrim",
+      "isPermanent": true
+   }
+ ],
+"ground" : {
+  "isWheel": true,
+  "flatHeight": 1.125,
+  "height" : 1.125,
+  "width" : 0.3125,
+  "motiveFriction" : 0.5,
+  "lateralFriction" : 0.5
+},
+"rendering" : {
+  "animatedObjects" : [
+    {
+      "objectName": "$tire",
+      "animations": [
+        {
+          "animationType": "visibility",
+          "variable": "ground_isflat"
+        }
+      ]
+    }
+  ]
+}
+}

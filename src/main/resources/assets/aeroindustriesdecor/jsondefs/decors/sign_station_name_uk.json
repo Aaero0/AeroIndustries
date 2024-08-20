@@ -1,0 +1,34 @@
+{
+   "general":{
+      "name":"Sign (Train Station Name, UK)",
+      "width":3.0,
+      "height":3.0,
+      "depth":0.16,
+      "materials":[
+         "oredict:dyeBlue:2",
+         "oredict:ingotIron:3",
+         "oredict:slimeball:1"
+      ]
+   },
+   "rendering":{
+      "textObjects":[
+         {
+            "pos":[
+               0.0,
+               2.75,
+               0.0015625
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.75,
+            "fieldName":"Station name",
+            "defaultText":"Manchester Piccadilly",
+            "maxLength":30,
+            "color":"#FFFFFF"
+         }
+      ]
+   }
+}

@@ -1,0 +1,30 @@
+{
+  "generic": {
+    "type": "generic_truckbed",
+    "forwardsDamageMultiplier": 1.0,
+    "width": 1.5,
+    "height": 0.5
+  },
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": false,
+	  "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel",
+          "pos": [0.0,0.171875,-4.125],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Truck fifthwheel hitch",
+    "materials": ["minecraft:iron_ingot:0:10"]
+  }
+}

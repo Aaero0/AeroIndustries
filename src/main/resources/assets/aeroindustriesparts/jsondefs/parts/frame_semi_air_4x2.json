@@ -1,0 +1,172 @@
+{
+   "definitions":[
+      {
+         "subName":"",
+         "textureName" : "frame_truck_air",
+         "name":"HGX TH147HJ Truck Frame",
+         "partTones":[
+            ""
+         ],
+         "extraMaterialLists":[
+            [
+            ]
+         ]
+      }
+   ],
+  "generic": {
+    "type": "generic_frame_truck",
+    "width": 0.75,
+    "height": 0.75
+  },
+  "parts":[
+    {
+       "pos":[
+          1.21875,
+          -0.5,
+          -2.28125
+       ],
+       "rot":[
+          0.0,
+          180.0,
+          0.0
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+   "isMirrored": true,
+       "toneIndex":1,
+       "defaultPart":"warkparts:wark_truck_wheel_18x5",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          0.96875,
+          -0.5,
+          -2.28125
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+       "toneIndex":1,
+       "defaultPart":"warkparts:wark_truck_wheel_18x5",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          -1.21875,
+          -0.5,
+          -2.28125
+       ],
+       "rot":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+   "inverseMirroring": true,
+       "toneIndex":1,
+       "defaultPart":"warkparts:wark_truck_wheel_18x5",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          -0.96875,
+          -0.5,
+          -2.28125
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+       "toneIndex":1,
+       "defaultPart":"warkparts:wark_truck_wheel_18x5",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          1.0625,
+          -2.15625
+       ],
+       "types":[
+          "generic_hitch_pintle"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          0.0,
+          -3.046875
+       ],
+       "types":[
+          "generic_accessory_mudflap"
+       ]
+    },
+    {
+      "pos":[
+         0.0,
+         0.0625,
+         -1.8125
+      ],
+      "types":[
+         "generic_accessory_fender"
+      ]
+   },
+    {
+       "pos":[
+          0.0,
+          1.03125,
+          -2.2203125
+       ],
+       "types":[
+          "generic_trucklights"
+       ]
+    }
+ ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": false,
+	   "isHitch": true,
+      "canInitiateConnections": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel",
+          "pos": [
+            0.0,
+            0.296875,
+            -2.29296875
+         ],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "collisionGroups":[
+   {
+      "collisions": [
+        {
+         "pos":[
+            0.0,
+            0.296875,
+            -2.29296875
+         ],
+         "width":0.75,
+         "height":0.25,
+         "variableName":"connection_requested",
+         "variableType":"set",
+         "variableValue":1.0
+        }
+      ]
+    }
+],
+  "general": {
+    "description": "A shorter 4x2 truck frame with a built in fifthwheel hitch",
+    "materials": ["oredict:ingotIron:10"]
+  }
+}

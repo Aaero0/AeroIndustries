@@ -1,0 +1,171 @@
+{
+   "general":{
+      "type":"sign",
+      "modelName":"sign_terminalexit",
+      "materials":[
+         "oredict:ingotIron:1"
+      ]
+   },
+   "definitions": [
+    {
+      "subName": "1",
+      "name": "Airport Terminal Exit (T1)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:1"
+        ]
+      ]
+    },
+    {
+      "subName": "2",
+      "name": "Airport Terminal Exit (T2)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:1"
+        ]
+      ]
+    },
+	    {
+      "subName": "3",
+      "name": "Airport Terminal Exit (T3)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:1"
+        ]
+      ]
+    },
+    {
+      "subName": "4",
+      "name": "Airport Terminal Exit (T4)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:1"
+        ]
+      ]
+    },
+    {
+      "subName": "5",
+      "name": "Airport Terminal Exit (T5)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:1"
+        ]
+      ]
+    }
+  ],
+   "rendering":{
+      "textObjects":[
+         {
+            "fieldName":"Airline 1",
+            "pos":[
+               0.625,
+               0.53125,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         },
+		 {
+            "fieldName":"Airline 2",
+            "pos":[
+               -0.625,
+               0.53125,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         },
+		 {
+            "fieldName":"Airline 3",
+            "pos":[
+               0.625,
+               0.3125,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         },
+		 {
+            "fieldName":"Airline 4",
+            "pos":[
+               -0.625,
+               0.3125,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         },
+		 {
+            "fieldName":"Airline 5",
+            "pos":[
+               0.625,
+               0.09375,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         },
+		 {
+            "fieldName":"Airline 6",
+            "pos":[
+               -0.625,
+               0.09375,
+               0.021875
+            ],
+            "rot":[
+               0.0,
+               0.0,
+               0.0
+            ],
+            "scale":0.15625,
+            "maxLength":20,
+            "color":"#FFFFFF"
+         }
+      ]
+   }
+}

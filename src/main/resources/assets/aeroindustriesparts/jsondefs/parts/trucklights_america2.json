@@ -1,0 +1,104 @@
+{
+  "generic": {
+    "type": "generic_trucklights",
+    "width": 0.3,
+    "height": 0.5
+  },
+   "rendering":{
+      "lightObjects":[
+         {
+            "objectName":"&brakelightleft",
+            "emissive":true,
+            "color":"FF0000",
+            "brightnessAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"left_turn_signal",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"10_10_0_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               },
+			   {
+                  "animationType": "translation",
+                  "variable": "brake",
+                  "axis": [0.0,0.0,0.0],
+                  "duration": 1
+			   },
+               {
+                  "animationType": "translation",
+                  "variable": "brake",
+                  "axis": [0.0,1.0,0.0],
+                 "duration": 1
+               }
+            ]
+         },
+         {
+            "objectName":"&brakelightright",
+            "emissive":true,
+            "color":"FF0000",
+            "brightnessAnimations":[
+			   {
+                  "animationType": "translation",
+                  "variable": "brake",
+                  "axis": [0.0,0.0,0.0],
+                  "duration": 1
+			   },
+               {
+                  "animationType": "translation",
+                  "variable": "brake",
+                  "axis": [0.0,1.0,0.0],
+                 "duration": 1
+               },
+               {
+                  "animationType":"visibility",
+                  "variable":"right_turn_signal",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"10_10_0_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               }
+            ]
+         },
+         {
+            "objectName":"&reverselight",
+            "emissive":true,
+            "color":"FFFFFF",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable": "parent_engine_reversed_1",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2,
+				  "skipForwardsMovement": true
+               }
+            ]
+         }
+      ]
+   },
+  "general": {
+	"name": "Truck taillight (Standard, frame integrated)",
+    "description": "",
+    "materials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+  }
+}

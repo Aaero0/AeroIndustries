@@ -1,0 +1,16 @@
+{
+  "general": {
+    "name": "Leopard XJ Rubber tread",
+    "type": "ground_tread",
+    "materials": [ "oredict:ingotIron:5" ]
+  },
+	
+	"ground" : {
+		"isTread" : true,
+		"width" : 1.0,
+		"height" : 0.4,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 1.0,
+		"spacing" : 0.0
+	}
+}

@@ -1,0 +1,328 @@
+{
+  "generic": {
+    "type": "generic_truckbed",
+    "forwardsDamageMultiplier": 1.0,
+    "width": 1.5,
+    "height": 0.5
+  },
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "click",
+        "block",
+        "attack",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.03125,-0.75],
+          "width": 0.3125,
+          "height": 0.3125,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    },
+    {
+      "collisionTypes": [
+        "click",
+        "attack",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [1.5375,0.71875,-2.09375],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "doorsleft",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "doorsleft",
+          "axis": [0.11553124999999986,0.0,-2.9324562500000004]
+        }
+      ]
+    },
+    {
+      "collisionTypes": [
+        "click",
+        "attack",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [-1.5375,0.71875,-2.09375],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "doorsright",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "doorsright",
+          "axis": [-0.11553124999999986,0.0,-2.9324562500000004]
+        }
+      ]
+    },
+    {
+      "collisionTypes": [
+        "click",
+        "attack",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.78125,-5.9375],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "rampdeploy",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "rampdeploy",
+          "axis": [0.0,-0.91006875,-0.5747375000000003]
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_standard",
+          "pos": [0.0,-0.015625,-0.15625],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,0.15625,-0.9375],
+          "distance": 3.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Covered Car carrier truckbed",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+	"animatedObjects": [
+      {
+        "objectName": "$doorleft1",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "doorsleft",
+            "centerPoint": [1.53125,1.328125,-3.5625],
+            "axis": [0.0,175.0,0.0],
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$doorright1",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "doorsright",
+            "centerPoint": [-1.53125,1.328125,-3.5625],
+            "axis": [0.0,-175.0,0.0],
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$doorleft2",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "doorsleft",
+            "centerPoint": [1.53125,1.328125,-0.1875],
+            "axis": [0.0,-175.0,0.0],
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$doorright2",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "doorsright",
+            "centerPoint": [-1.53125,1.328125,-0.1875],
+            "axis": [0.0,175.0,0.0],
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$doorramp",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rampdeploy",
+            "centerPoint": [0.0,0.125,-5.90625],
+            "axis": [-110.0,0.0,0.0],
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$slidingramp",
+        "animations": [
+		  {
+            "animationType": "rotation",
+            "variable": "rampdeploy",
+            "centerPoint": [0.0,0.125,-5.90625],
+            "axis": [-110.0,0.0,0.0],
+            "duration": 50
+          },
+          {
+            "animationType": "translation",
+            "variable": "rampdeploy",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,1.8125,0.0],
+            "duration": 50
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&parkinglights",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_running_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&brakerunninglights",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.73,0.0]
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.5,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      }
+    ],
+    "particles": [],
+    "modelType": "obj",
+    "initialVariables": [
+      "doorsleft",
+      "doorsright",
+      "rampdeploy"
+    ]
+  },
+  "general": {
+    "name": "Covered Car carrier truckbed",
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

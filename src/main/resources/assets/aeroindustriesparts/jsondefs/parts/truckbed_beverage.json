@@ -1,0 +1,154 @@
+{
+  "generic": {
+    "type": "generic_truckbed",
+    "forwardsDamageMultiplier": 1.0,
+    "width": 1.5,
+    "height": 0.5
+  },
+    "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos":[0.0,0.03125,-0.75],
+          "width":0.3125,
+          "height":0.3125,
+	      "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": false,
+	  "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_standard",
+          "pos": [0.0,-0.015625,-0.15625],
+          "distance": 2.0
+        }
+      ]
+    },
+	{
+      "groupName": "HOOKUP",
+      "isHookup": true,
+	  "isHitch": false,
+      "connections": [
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,0.15625,-0.9375],
+          "distance": 3.0
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [
+      {
+        "objectName": "&parkinglights",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_running_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+		]
+      },
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+		]
+      },
+      {
+        "objectName": "&brakerunninglights",
+        "emissive": true,
+		"isElectric": true,
+        "color": "ff0000",
+        "brightnessAnimations": [
+		  {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.73,0.0]
+          },
+		  {
+			"animationType": "inhibitor",
+			"variable": "brake",
+			"clampMax": 1,
+			"clampMin": 1
+		  },
+		  {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.5,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "ff0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+		]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "ff0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+		]
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Roll up beverage truckbed",
+    "materials": ["minecraft:iron_ingot:0:10"]
+  }
+}

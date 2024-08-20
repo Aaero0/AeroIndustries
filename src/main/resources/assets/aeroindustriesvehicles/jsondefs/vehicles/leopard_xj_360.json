@@ -1,0 +1,389 @@
+{
+  "motorized": {
+    "isFrontWheelDrive": true,
+    "isRearWheelDrive": true,
+	"hasHeadlights": true,
+	"hasRunningLights": true,
+	"hasTurnSignals": true,
+    "emptyMass": 6500,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 1.0
+  },
+  "parts": [
+    {
+      "pos": [1.5243875,0.246875,0.0],
+      "turnsWithSteer": true,
+	  "minValue": 0.0,
+	  "maxValue": 10.0,
+      "extraCollisionBoxOffset": 3.75,
+      "types": ["ground_tread"],
+      "treadPath": ["$roller","$roller1","$roller2","$roller3","$roller4","$roller5","$roller6"],
+	  "defaultPart": "aeroindustriesparts:leopard_track"
+    },
+    {
+      "pos": [-1.5243875,0.246875,0.0],
+      "turnsWithSteer": true,
+	  "minValue": 0.0,
+	  "maxValue": 10.0,
+      "extraCollisionBoxOffset": 3.75,
+      "types": ["ground_tread"],
+      "treadPath": ["$roller","$roller1","$roller2","$roller3","$roller4","$roller5","$roller6"],
+	  "defaultPart": "aeroindustriesparts:leopard_track"
+    },
+    {
+       "pos":[
+          0.421875,
+          2.375,
+          2.3125
+       ],
+       "isPermanent":true,
+       "defaultPart":"unuparts:unuparts_part_unu_seat_invisible",
+       "isController":true,
+       "types":[
+          "seat_invisible"
+       ]
+    },
+    {
+      "pos": [-1,2.0,0.5],
+      "maxValue": 1.25,
+      "types": ["engine_car"],
+	  "defaultPart":"unuparts:unuparts_part_unu_engine_i06_diesel"
+    }
+  ],
+  "collisionGroups": [],
+  "instruments": [],
+  "definitions": [
+    {
+      "subName": "_yellow",
+      "name": "Leopard XJ (360)",
+      "extraMaterials": ["oredict:dyeYellow:3"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$roller",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [0.0,0.921875,3.3125],
+            "axis": [1.874373592822422,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$roller5",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [0.0,0.921875,-3.3125],
+            "axis": [1.874373592822422,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$rollerr",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [0.0,0.921875,3.3125],
+            "axis": [1.874373592822422,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$roller5r",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "ground_rotation_1",
+            "centerPoint": [0.0,0.921875,-3.3125],
+            "axis": [1.874373592822422,0.0,0.0]
+          }
+        ]
+      }
+    ],
+      "lightObjects":[
+         {
+            "objectName":"&headlights",
+            "emissive":true,
+            "color":"FFFFE7",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"headlight",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         },
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+         {
+            "objectName":"&runninglightsfront",
+            "emissive":true,
+            "color":"FFFFE7",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"headlight",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         },
+         {
+            "objectName":"&turnsignalleft",
+            "emissive":true,
+            "color":"FAB000",
+            "brightnessAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"left_turn_signal",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"10_10_0_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               }
+            ]
+         },
+         {
+            "objectName":"&turnsignalright",
+            "emissive":true,
+            "color":"FAB000",
+            "brightnessAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"right_turn_signal",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"10_10_0_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               }
+            ]
+         },
+         {
+            "objectName":"&beaconorange",
+            "emissive":true,
+            "color":"FAB000",
+            "brightnessAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"Beacons",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"1_1_1_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               }
+            ]
+         },
+         {
+            "objectName":"&beacongreen",
+            "emissive":true,
+            "color":"00ff70",
+            "brightnessAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"Beacons",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               },
+               {
+                  "animationType":"translation",
+                  "variable":"1_1_1_cycle",
+                  "axis":[
+                     0.0,
+                     1.0,
+                     0.0
+                  ],
+                  "duration":2
+               }
+            ]
+         },
+         {
+            "objectName":"&parkinglights",
+            "emissive":true,
+            "color":"FAB000",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"running_light",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         },
+         {
+            "objectName":"&runninglightsfront",
+            "emissive":true,
+            "color":"FFFFFF",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"running_light",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         },
+         {
+            "objectName":"&worklights",
+            "emissive":true,
+            "color":"FFFFE7",
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"Worklights",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         }
+      ],
+    "customVariables": ["Worklights","Beacons"],
+    "initialVariables": [],
+      "sounds":[
+         {
+            "name":"mtsofficialpack:horn_truck",
+            "activeAnimations":[
+               {
+                  "animationType":"visibility",
+                  "variable":"horn",
+                  "clampMin":1.0,
+                  "clampMax":1.0
+               }
+            ],
+            "looping":true,
+            "minDistance":0.0,
+            "minDistanceVolume":0.0,
+            "middleDistance":0.0,
+            "middleDistanceVolume":0.0,
+            "maxDistance":0.0,
+            "maxDistanceVolume":0.0
+         }
+      ],
+    "particles": [
+      {
+        "type": "smoke",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 2.0,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [-0.684649,0.964062,-1.21544],
+        "initialVelocity": [0.0,0.0,-1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "quantity": 5,
+        "scale": 2.5,
+        "color": "000000",
+        "pos": [-0.684649,0.964062,-1.21544],
+        "initialVelocity": [0.0,0.0,-1.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "The XJ is a multipurpose tracked vehicle deisgned by Leopard Logistics.",
+    "health": 3250,
+    "materials": ["oredict:ingotIron:18"]
+  }
+}
