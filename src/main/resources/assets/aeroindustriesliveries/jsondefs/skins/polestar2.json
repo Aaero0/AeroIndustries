@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Polestar 2 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "polestar2"
+	}
+}

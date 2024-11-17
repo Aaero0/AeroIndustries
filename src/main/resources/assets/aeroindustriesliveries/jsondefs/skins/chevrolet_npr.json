@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Chevrolet NPR (LBC Express)",
+			"subName" : "_lbc",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "chevrolet_npr"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Hyndai Sonata NF (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "hyundai_sonata_nf_v6"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"definitions" : [
+		{
+			"name" : "Isuzu Erga HL2ANBD (Tobu Bus)",
+			"subName" : "_tobu",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Isuzu Erga HL2ANBD (TOEI)",
+			"subName" : "_toei",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Isuzu Erga HL2ANBD (Osaka City Bus)",
+			"subName" : "_osaka",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	
+	"general": {
+    "packID": "gvp",
+    "systemName": "isuzu_erga_2sg_hl2anbd"
+	}
+}

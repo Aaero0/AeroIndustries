@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Iveco Daily II Bus (FTA YellowBus)",
+			"subName" : "_school",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "iveco_daily_2_bus"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Honda Civic FE LHD (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "honda_civic_fel"
+	}
+}

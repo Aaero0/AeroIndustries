@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "UNU Scarab (FTA)",
+			"subName" : "_fta",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "unucivil",
+    "systemName": "unucivil_vehicle_unu_scarab"
+	}
+}

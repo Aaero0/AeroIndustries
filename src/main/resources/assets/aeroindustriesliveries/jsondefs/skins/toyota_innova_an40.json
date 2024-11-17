@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Innova (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_innova_an40"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mitsubishi Lancer GL A172A (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mitsubishi_lancer_a172a_gl"
+	}
+}

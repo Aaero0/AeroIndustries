@@ -1,0 +1,38 @@
+{
+	"definitions" : [
+		{
+			"name" : "Leyland Olympian (Finser Transit Authority)",
+			"subName" : "_fta",
+			"description" : "1 of 18 Leyland Olympians operated by the FTA",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Red, White stripe)",
+			"subName" : "_redwhite",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Red)",
+			"subName" : "_red",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Green)",
+			"subName" : "_green",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Stagecoach Manchester)",
+			"subName" : "_stagecoach",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "leyland_olympian_al134"
+	}
+}

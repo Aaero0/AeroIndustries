@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Honda Civic EJ8 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "honda_civic_ej8"
+	}
+}

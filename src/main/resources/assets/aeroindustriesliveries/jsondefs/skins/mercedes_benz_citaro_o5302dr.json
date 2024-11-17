@@ -1,0 +1,27 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (Arriva Max)",
+			"subName" : "_arriva",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (TFL, Grey bumper)",
+			"subName" : "_tfl",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (TFL)",
+			"subName" : "_tflfullred",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercedes_benz_citaro_o5302dr"
+	}
+}

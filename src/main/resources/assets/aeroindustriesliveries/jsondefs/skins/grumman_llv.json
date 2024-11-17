@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Grumman LLV (Canada Post)",
+			"subName" : "_canadapost",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "grumman_llv"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan Almera (Angeles Blue Taxi)",
+			"subName" : "_angelesbluetaxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_almera_n17"
+	}
+}

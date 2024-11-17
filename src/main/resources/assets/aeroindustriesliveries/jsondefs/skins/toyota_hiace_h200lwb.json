@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Hiace H200 LWB (Japanese School Bus)",
+			"subName" : "_school",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_hiace_h200lwb"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "UNU Banker Sedan (FTA Yellowcar, heritage)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "unucivil",
+    "systemName": "unucivil_vehicle_unu_banker_sedan"
+	}
+}

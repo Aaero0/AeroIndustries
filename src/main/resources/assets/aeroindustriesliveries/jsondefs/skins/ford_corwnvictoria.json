@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Ford Crown Victoria LX (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "ford_crownvictoria"
+	}
+}

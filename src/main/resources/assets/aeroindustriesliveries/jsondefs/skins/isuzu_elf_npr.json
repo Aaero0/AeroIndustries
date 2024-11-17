@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Isuzu Elf NPR (LBC Express)",
+			"subName" : "_lbc",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Isuzu Elf NPR (Asian Tigers Group)",
+			"subName" : "_asiantigers",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "isuzu_elf_npr"
+	}
+}

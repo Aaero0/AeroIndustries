@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Prius XW30 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_prius_xw30"
+	}
+}

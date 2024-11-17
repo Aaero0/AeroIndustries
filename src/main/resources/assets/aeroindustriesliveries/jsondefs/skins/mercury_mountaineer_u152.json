@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercury Mountaineer U152 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercury_mountaineer_u152"
+	}
+}

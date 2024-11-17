@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Chevrolet Caprice 4S 9C6 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Chevrolet Caprice 4S 9C6 (FTA Yellowcar, worn)",
+			"subName" : "_ftataxi_worn",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "chevrolet_caprice_4s_9c6"
+	}
+}

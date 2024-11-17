@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Corolla AE111 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_corolla_ae111"
+	}
+}

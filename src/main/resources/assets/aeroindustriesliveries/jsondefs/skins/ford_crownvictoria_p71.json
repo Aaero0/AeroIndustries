@@ -1,0 +1,32 @@
+{
+	"definitions" : [
+		{
+			"name" : "Ford Crown Victoria P71 (Beige)",
+			"subName" : "_beige",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Ford Crown Victoria P71 (Silver)",
+			"subName" : "_silver",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Ford Crown Victoria P71 (Black)",
+			"subName" : "_black",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Ford Crown Victoria P71 (White)",
+			"subName" : "_white",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "ford_crownvictoria_p71"
+	}
+}

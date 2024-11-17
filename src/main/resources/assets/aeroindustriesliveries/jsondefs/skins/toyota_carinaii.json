@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Carina II (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_carinaii"
+	}
+}

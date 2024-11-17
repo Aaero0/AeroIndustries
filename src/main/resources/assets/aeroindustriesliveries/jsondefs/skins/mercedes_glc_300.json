@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercedes GLC 300 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercedes_glc_300"
+	}
+}

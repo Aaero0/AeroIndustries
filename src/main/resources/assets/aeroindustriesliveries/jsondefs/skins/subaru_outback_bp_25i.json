@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Subaru Outback BP 2.5i (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "subaru_outback_bp_25i"
+	}
+}

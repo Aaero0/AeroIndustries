@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan Skyline RV37 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_skyline_rv37_400r"
+	}
+}
