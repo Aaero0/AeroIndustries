@@ -452,7 +452,7 @@
             "animations":[
                {
                   "animationType":"visibility",
-                  "variable":"!part_present_11",
+                  "variable":"part_present_11",
                   "centerPoint":[
                      0.0,
                      0.0,
@@ -471,7 +471,7 @@
             "animations":[
                {
                   "animationType":"visibility",
-                  "variable":"part_present_11",
+                  "variable":"!part_present_11",
                   "centerPoint":[
                      0.0,
                      0.0,

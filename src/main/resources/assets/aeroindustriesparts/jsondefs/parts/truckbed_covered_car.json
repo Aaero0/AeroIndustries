@@ -113,7 +113,8 @@
         {
           "type": "tow_wheel",
           "pos": [0.0,0.15625,-0.9375],
-          "distance": 3.0
+          "distance": 5.0,
+          "mounted":true
         }
       ]
     }
