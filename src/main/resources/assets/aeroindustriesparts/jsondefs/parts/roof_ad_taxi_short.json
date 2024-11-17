@@ -1,0 +1,84 @@
+{
+    "rendering":{
+       "customVariables":[
+          "taxi"
+       ],
+       "initialVariables":[
+          "taxi"
+       ],
+       "lightObjects":[
+          {
+             "objectName":"&light",
+             "emissive":true,
+             "isElectric":true,
+             "color":"ff9a00",
+             "brightnessAnimations":[
+                {
+                   "animationType":"translation",
+                   "variable":"headlight",
+                   "axis":[
+                      0.0,
+                      1.5,
+                      0.0
+                   ],
+                   "duration":1
+                }
+             ]
+          },
+          {
+            "objectName":"&taxi",
+            "emissive":false,
+            "isElectric":true,
+            "brightnessAnimations":[
+               {
+                  "animationType":"translation",
+                  "variable":"taxi",
+                  "axis":[
+                     0.0,
+                     1.5,
+                     0.0
+                  ],
+                  "duration":1
+               }
+            ]
+         }
+       ],
+       "sounds":[
+
+       ],
+       "particles":[
+          
+       ],
+       "modelType":"obj"
+    },
+    "generic":{
+       "type":"generic_roofdevice",
+       "width":0.5,
+       "height":0.5
+    },
+    "definitions": [
+      {
+         "subName": "",
+         "name": "Taxi Roof Ad (Template)",
+         "extraMaterialLists": [
+           []
+         ]
+      },
+      {
+        "subName": "_tax",
+        "name": "Taxi Roof Ad (Taxes)",
+        "extraMaterialLists": [
+          []
+        ]
+      }
+    ],
+  
+    "general":{
+       "description":"ah yes, mobile advertising",
+       "materialLists":[
+          [
+             "minecraft:glass:0:1"
+          ]
+       ]
+    }
+ }

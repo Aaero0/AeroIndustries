@@ -1,0 +1,157 @@
+{
+   "definitions":[
+      {
+         "subName":"",
+         "textureName" : "frame_truck_air",
+         "name":"HGX RT04L250 Truck Frame",
+         "partTones":[
+            ""
+         ],
+         "extraMaterialLists":[
+            [
+            ]
+         ]
+      }
+   ],
+  "generic": {
+    "type": "generic_frame_trucklightduty",
+    "width": 0.75,
+    "height": 0.75
+  },
+  "parts":[
+    {
+       "pos":[
+          1.0703125,
+          -0.440625,
+          -4.046875
+       ],
+       "rot":[
+          0.0,
+          180.0,
+          0.0
+       ],
+       "partScale":[
+         0.8,
+         0.8,
+         0.8
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+   "isMirrored": true,
+       "toneIndex":1,
+       "defaultPart":"aeroindustriesparts:wheel_budd_steel",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          0.8671875,
+          -0.440625,
+          -4.046875
+       ],
+       "partScale":[
+         0.8,
+         0.8,
+         0.8
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+       "toneIndex":1,
+       "defaultPart":"aeroindustriesparts:wheel_budd_steel",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          -1.0703125,
+          -0.440625,
+          -4.046875
+       ],
+       "rot":[
+          0.0,
+          0.0,
+          0.0
+       ],
+       "partScale":[
+         0.8,
+         0.8,
+         0.8
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+   "inverseMirroring": true,
+       "toneIndex":1,
+       "defaultPart":"aeroindustriesparts:wheel_budd_steel",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          -0.8671875,
+          -0.440625,
+          -4.046875
+       ],
+       "partScale":[
+         0.8,
+         0.8,
+         0.8
+       ],
+       "maxValue":1.875,
+       "minValue":1.0,
+       "toneIndex":1,
+       "defaultPart":"aeroindustriesparts:wheel_budd_steel",
+       "types":[
+          "ground_wheel_budd"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          0.0,
+          -5.9375
+       ],
+       "types":[
+          "generic_truckbedlight"
+       ]
+    },
+    {
+       "pos":[
+          0.0,
+          0.0,
+          -4.9375
+       ],
+       "types":[
+          "generic_accessorylight_mudflap"
+       ]
+    },
+    {
+      "pos":[
+         0.0,
+         0.0625,
+         -2.3125
+      ],
+      "types":[
+         "generic_accessorylight_fender"
+      ]
+   },
+    {
+       "pos":[
+          0.0,
+          1.03125,
+          -2.2203125
+       ],
+       "types":[
+          "generic_trucklightssmall"
+       ]
+    }
+ ],
+  "connectionGroups": [
+  ],
+  "general": {
+    "description": "A rigid 4x2 frame desinged for smaller trucks",
+    "materials": ["oredict:ingotIron:10"]
+  }
+}

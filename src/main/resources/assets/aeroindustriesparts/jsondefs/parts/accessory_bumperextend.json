@@ -1,0 +1,15 @@
+{
+  "generic": {
+    "type": "generic_bumperextend",
+    "width": 1.5,
+    "height": 0.25
+  },
+  "rendering":{
+    "modelType":"none"
+  },
+  "general": {
+	"name": "Truck Bumper extension",
+    "description": "Extends the bumper of your truck. (Appearance is based on vehicle)",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}

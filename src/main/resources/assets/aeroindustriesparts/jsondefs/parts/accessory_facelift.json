@@ -1,0 +1,15 @@
+{
+  "generic": {
+    "type": "generic_facelift",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "rendering":{
+    "modelType":"none"
+  },
+  "general": {
+	"name": "vehicle facelift kit",
+    "description": "Give that thing a glow up.",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}
